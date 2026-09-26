@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Quote, Linkedin, Mail, CheckCircle2 } from 'lucide-react';
+import { Quote, Mail, CheckCircle2 } from 'lucide-react';
 
 const CEO = () => {
   return (
@@ -34,7 +34,7 @@ const CEO = () => {
                   />
                 </div>
 
-                {/* Verified Founder Badge */}
+                    {/* Founder Badge */}
                 <div className="absolute bottom-2 right-4 bg-white text-navy px-3.5 py-1.5 rounded-full shadow-lg border border-slate-100 flex items-center space-x-1.5">
                   <CheckCircle2 className="w-4 h-4 text-electric" />
                   <span className="text-xs font-bold">Executive Engineer</span>
@@ -42,15 +42,6 @@ const CEO = () => {
               </div>
 
               <div className="mt-6 flex items-center space-x-3">
-                <a
-                  href="https://linkedin.com"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="w-9 h-9 rounded-full bg-white border border-slate-200 flex items-center justify-center text-navy hover:text-electric hover:border-electric transition-colors shadow-sm"
-                  aria-label="LinkedIn Profile"
-                >
-                  <Linkedin className="w-4 h-4" />
-                </a>
                 <a
                   href="mailto:ahmedghulam622@gmail.com"
                   className="w-9 h-9 rounded-full bg-white border border-slate-200 flex items-center justify-center text-navy hover:text-electric hover:border-electric transition-colors shadow-sm"

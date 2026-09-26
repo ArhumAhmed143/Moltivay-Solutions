@@ -52,7 +52,7 @@ const services = [
     isSpecial: true,
     description: 'Intelligent AI-driven social media management, automated content scheduling, caption drafting, and multichannel audience growth analytics.',
     badge: '⭐ AI Powered Suite',
-    features: ['Multi-Channel Scheduler', 'AI Hook Copywriting', 'Weekly 20+ Hours Saved'],
+    features: ['Multi-Channel Scheduler', 'AI-Assisted Copy Drafts', 'Content Calendar'],
     color: 'from-orange-500 to-accent',
     link: '/services#social-media-assistant'
   },
@@ -60,8 +60,8 @@ const services = [
     id: 'qa-testing',
     icon: CheckCircle,
     title: 'QA & Testing',
-    description: 'End-to-end automated testing, regression suites, load testing, and manual audit cycles to guarantee bug-free deployments.',
-    badge: 'Zero-Defect Focus',
+    description: 'Automated and manual testing to identify regressions, performance issues, and security concerns before release.',
+    badge: 'Quality-Focused Testing',
     features: ['Automated Playwright Suites', 'Load & Stress Testing', 'OWASP Security Audits'],
     color: 'from-emerald-500 to-teal-600',
     link: '/services#qa-testing'
@@ -70,9 +70,9 @@ const services = [
     id: 'maintenance-support',
     icon: Headphones,
     title: 'Maintenance & Support',
-    description: '24/7 proactive monitoring, security patch management, performance optimization, and SLA-backed infrastructure reliability.',
-    badge: '24/7 Monitoring',
-    features: ['99.98% SLA Availability', 'Automated Health Checks', 'Rapid Response Escalation'],
+    description: 'Project-scoped infrastructure monitoring, security patch planning, performance optimization, and maintenance support.',
+    badge: 'Monitoring & Maintenance',
+    features: ['Monitoring Options', 'Infrastructure Health Checks', 'Planned Escalation Paths'],
     color: 'from-blue-600 to-navy',
     link: '/services#maintenance-support'
   },

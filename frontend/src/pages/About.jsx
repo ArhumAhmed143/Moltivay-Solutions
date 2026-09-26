@@ -11,7 +11,6 @@ import {
   ShieldCheck, 
   Zap, 
   Users, 
-  Linkedin, 
   Mail, 
   ArrowRight,
   Code2,
@@ -41,8 +40,8 @@ const values = [
   {
     icon: Zap,
     title: 'Relentless Velocity',
-    description: 'Using agile 2-week sprint cycles, automated CI/CD pipelines, and continuous integration, we deliver functional software rapidly without compromising code quality.',
-    badge: '2-Week Sprints',
+    description: 'Using agreed project iterations, CI/CD practices, and continuous integration, we deliver functional software with regular quality checks.',
+    badge: 'Iterative Delivery',
     color: 'from-amber-500 to-accent',
     bgColor: 'bg-orange-50 text-accent'
   },
@@ -50,7 +49,7 @@ const values = [
     icon: ShieldCheck,
     title: 'Radical Transparency',
     description: 'No hidden dependencies, no vague timelines. Our clients have direct access to our engineers, sprint boards, staging repositories, and daily Slack syncs.',
-    badge: '100% Direct Sync',
+    badge: 'Direct Collaboration',
     color: 'from-emerald-500 to-teal-600',
     bgColor: 'bg-emerald-50 text-emerald-600'
   },
@@ -67,17 +66,17 @@ const values = [
 const engineeringDnaTabs = [
   {
     id: 'sprints',
-    title: '2-Week Agile Cadence',
+    title: 'Agile Delivery Cadence',
     subtitle: 'Predictable Velocity & Milestones',
     icon: Zap,
-    description: 'Every project is structured into transparent 2-week sprints with verifiable milestones, live staging previews, and automated daily status reports.',
+    description: 'Projects can be structured into agreed iterations with milestones, staging previews, and regular status updates.',
     points: [
       'Sprint backlog grooming & clear user stories',
       'Daily asynchronous standups on dedicated Slack channels',
       'Live staging environment deployments every Friday',
       'Instant feedback iterations with zero bureaucracy'
     ],
-    codeSnippet: `// Sprint Velocity Metrics\nconst sprintCadence = {\n  cycle: "14 Days",\n  deployments: "Continuous Staging",\n  codeReview: "2 Senior Approvals",\n  testCoverage: "> 90% Verified"\n};`
+    codeSnippet: `// Example delivery workflow\nconst delivery = {\n  planning: "Project milestones",\n  reviews: "Regular code review",\n  testing: "Automated and manual QA",\n  releases: "Staged deployment"\n};`
   },
   {
     id: 'architecture',
@@ -95,7 +94,7 @@ const engineeringDnaTabs = [
   },
   {
     id: 'qa',
-    title: 'Automated QA & Zero Regressions',
+    title: 'Automated QA & Quality Reviews',
     subtitle: 'Battle-Tested Code Hygiene',
     icon: ShieldCheck,
     description: 'Rigorous end-to-end automated test suites run before every single pull request merges, eliminating production regressions and security flaws.',
@@ -103,9 +102,9 @@ const engineeringDnaTabs = [
       'End-to-End Playwright & Cypress browser tests',
       'Unit & integration tests with Jest and Supertest',
       'OWASP Top 10 security scanning on CI/CD pipelines',
-      'Zero-downtime rolling production deploys'
+      'Rolling deployment options for production services'
     ],
-    codeSnippet: `// Automated Pipeline Check\n✓ 142 Unit Tests Passed (1.2s)\n✓ 38 E2E Flow Checks Passed (4.5s)\n✓ 0 Vulnerabilities Detected\n✓ Build Status: READY FOR PROD`
+    codeSnippet: `// Example CI pipeline\nsteps:\n  - lint\n  - unit-and-integration-tests\n  - dependency-review\n  - deploy-to-staging`
   },
   {
     id: 'social',
@@ -208,32 +207,32 @@ const AboutPage = () => {
                 <div className="w-10 h-10 rounded-xl bg-blue-50 text-electric flex items-center justify-center mx-auto mb-3">
                   <Code2 className="w-5 h-5" />
                 </div>
-                <div className="text-3xl sm:text-4xl font-extrabold text-navy font-heading">50+</div>
-                <div className="text-xs sm:text-sm font-semibold text-text-muted mt-1">Products Engineered</div>
+                <div className="text-2xl sm:text-3xl font-extrabold text-navy font-heading">Web & Mobile</div>
+                <div className="text-xs sm:text-sm font-semibold text-text-muted mt-1">Product Engineering</div>
               </div>
 
               <div className="p-6 rounded-2xl bg-white/90 backdrop-blur-md border border-slate-200/80 shadow-clean hover:shadow-card-hover transition-all duration-300 transform hover:-translate-y-1">
                 <div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mx-auto mb-3">
                   <Activity className="w-5 h-5" />
                 </div>
-                <div className="text-3xl sm:text-4xl font-extrabold text-electric font-heading">99.98%</div>
-                <div className="text-xs sm:text-sm font-semibold text-text-muted mt-1">SLA Uptime Reliability</div>
+                <div className="text-2xl sm:text-3xl font-extrabold text-electric font-heading">Cloud-ready</div>
+                <div className="text-xs sm:text-sm font-semibold text-text-muted mt-1">Architecture</div>
               </div>
 
               <div className="p-6 rounded-2xl bg-white/90 backdrop-blur-md border border-slate-200/80 shadow-clean hover:shadow-card-hover transition-all duration-300 transform hover:-translate-y-1">
                 <div className="w-10 h-10 rounded-xl bg-orange-50 text-accent flex items-center justify-center mx-auto mb-3">
                   <Zap className="w-5 h-5" />
                 </div>
-                <div className="text-3xl sm:text-4xl font-extrabold text-accent font-heading">100%</div>
-                <div className="text-xs sm:text-sm font-semibold text-text-muted mt-1">On-Time Milestones</div>
+                <div className="text-2xl sm:text-3xl font-extrabold text-accent font-heading">Iterative</div>
+                <div className="text-xs sm:text-sm font-semibold text-text-muted mt-1">Delivery Milestones</div>
               </div>
 
               <div className="p-6 rounded-2xl bg-white/90 backdrop-blur-md border border-slate-200/80 shadow-clean hover:shadow-card-hover transition-all duration-300 transform hover:-translate-y-1">
                 <div className="w-10 h-10 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center mx-auto mb-3">
                   <ShieldCheck className="w-5 h-5" />
                 </div>
-                <div className="text-3xl sm:text-4xl font-extrabold text-purple-600 font-heading">24/7</div>
-                <div className="text-xs sm:text-sm font-semibold text-text-muted mt-1">Dedicated Support</div>
+                <div className="text-2xl sm:text-3xl font-extrabold text-purple-600 font-heading">Ongoing</div>
+                <div className="text-xs sm:text-sm font-semibold text-text-muted mt-1">Engineering Support</div>
               </div>
             </motion.div>
 
@@ -277,7 +276,7 @@ const AboutPage = () => {
                   </div>
                   <div className="flex items-center space-x-2.5">
                     <CheckCircle2 className="w-5 h-5 text-electric flex-shrink-0" />
-                    <span>Strict 2-Week Agile Sprints</span>
+                    <span>Agile Project Iterations</span>
                   </div>
                   <div className="flex items-center space-x-2.5">
                     <CheckCircle2 className="w-5 h-5 text-electric flex-shrink-0" />
@@ -315,7 +314,7 @@ const AboutPage = () => {
                     <div className="space-y-3 font-mono text-xs">
                       <div className="p-3 rounded-xl bg-white/5 border border-white/10 flex items-center justify-between">
                         <span className="text-slate-300">Development Velocity:</span>
-                        <span className="text-electric font-bold">2-Week Milestones</span>
+                        <span className="text-electric font-bold">Project Milestones</span>
                       </div>
                       <div className="p-3 rounded-xl bg-white/5 border border-white/10 flex items-center justify-between">
                         <span className="text-slate-300">QA Automation Coverage:</span>
@@ -357,7 +356,7 @@ const AboutPage = () => {
                 Our Engineering DNA & Delivery Standard
               </h2>
               <p className="text-base sm:text-lg text-text-muted">
-                Explore the foundational pillars that guarantee every Moltivay product ships on schedule with enterprise-grade quality.
+                Explore the practices we use to plan, build, review, and deliver digital products.
               </p>
             </div>
 
@@ -477,7 +476,7 @@ const AboutPage = () => {
                   The Global Standard for Modern Software Agencies
                 </h3>
                 <p className="text-text-muted text-base leading-relaxed">
-                  To be the global benchmark for modern software development agencies—recognized for pioneering autonomous AI-augmented workflows, zero-defect software releases, and enduring client partnerships.
+                  To build reliable digital products through thoughtful engineering, clear communication, and lasting client partnerships.
                 </p>
                 <div className="pt-2 flex items-center space-x-2 text-xs font-bold text-accent">
                   <span>Pioneering Autonomous AI Integration</span>
@@ -568,15 +567,6 @@ const AboutPage = () => {
                       <span>ahmedghulam622@gmail.com</span>
                     </a>
 
-                    <a
-                      href="https://linkedin.com"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="inline-flex items-center text-xs font-bold text-navy hover:text-electric transition-colors"
-                    >
-                      <Linkedin className="w-4 h-4 mr-1 text-electric" />
-                      <span>LinkedIn Profile</span>
-                    </a>
                   </div>
 
                 </div>

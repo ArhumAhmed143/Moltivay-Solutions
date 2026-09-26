@@ -31,7 +31,7 @@ const steps = [
     number: '05',
     title: 'Launch',
     icon: Rocket,
-    description: 'Zero-downtime deployment to production clouds (AWS, Vercel, Docker), CI/CD pipeline automation, and post-launch monitoring.',
+    description: 'Deployment to production clouds (AWS, Vercel, Docker), CI/CD pipeline setup, and post-launch monitoring options.',
   },
 ];
 

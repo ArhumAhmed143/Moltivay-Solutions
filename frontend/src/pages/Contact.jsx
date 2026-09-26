@@ -23,7 +23,7 @@ import {
 const faqs = [
   {
     q: 'How quickly can Moltivay assemble an engineering team for my project?',
-    a: 'We can typically kick off technical discovery within 24 to 48 hours of initial scoping. Once the statement of work (SOW) is approved, your dedicated engineers begin Sprint 1 immediately.'
+    a: 'We arrange a technical discovery discussion after reviewing your project scope and availability. Delivery timing is agreed during planning.'
   },
   {
     q: 'Do you sign a Non-Disclosure Agreement (NDA) before discovery calls?',
@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     q: 'What communication tools and project tracking methodology do you use?',
-    a: 'We operate on transparent 2-week agile sprints. You receive a dedicated Slack workspace with direct senior engineer access, bi-weekly video sprint reviews, and live access to staging environments.'
+    a: 'We agree on a delivery cadence and project tracking approach during planning. Communication channels, review points, and staging access are defined for each engagement.'
   },
   {
     q: 'What payment models and milestone structures do you support?',
@@ -83,7 +83,7 @@ const ContactPage = () => {
               className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200/60 text-electric text-xs sm:text-sm font-semibold tracking-wide mb-6 shadow-sm"
             >
               <Sparkles className="w-4 h-4 text-electric animate-spin" style={{ animationDuration: '8s' }} />
-              <span>⚡ Executive Engineering Desk • Response Time &lt; 2 Hours</span>
+              <span>Project Inquiries • Web, Mobile &amp; Cloud</span>
             </motion.div>
 
             {/* Main Title */}
@@ -206,16 +206,16 @@ const ContactPage = () => {
                       <span>Operating Hours</span>
                     </div>
                     <p className="text-sm font-bold text-navy">Monday – Friday: 9:00 AM – 6:00 PM</p>
-                    <p className="text-xs text-text-muted">24/7 dedicated critical incident monitoring for active SLA partners.</p>
+                    <p className="text-xs text-text-muted">Monitoring and support options are scoped to each project.</p>
                   </div>
 
                   <div className="pt-5 border-t border-slate-100 space-y-2">
                     <div className="flex items-center space-x-2 text-slate-500 font-bold text-xs uppercase tracking-wider">
                       <ShieldCheck className="w-4 h-4 text-emerald-500" />
-                      <span>Confidentiality Protocol</span>
+                      <span>Project Confidentiality</span>
                     </div>
                     <p className="text-xs text-text-muted leading-relaxed">
-                      NDA executed in advance. Full biometric and digital security access protocols maintained across our testing labs.
+                      Confidential project details can be discussed before work begins.
                     </p>
                   </div>
                 </div>
@@ -367,7 +367,7 @@ const ContactPage = () => {
         </section>
 
         {/* =========================================
-            24/7 SUPPORT & REASSURANCE BANNER
+            PROJECT SUPPORT & CONTACT BANNER
         ========================================= */}
         <section className="py-12 bg-navy text-white border-t border-navy-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
@@ -376,8 +376,8 @@ const ContactPage = () => {
                 <Headphones className="w-6 h-6" />
               </div>
               <div>
-                <h4 className="text-base font-bold text-white">Need Immediate Technical Assistance?</h4>
-                <p className="text-xs text-slate-400">Our engineering leads monitor inbound inquiries around the clock.</p>
+                <h4 className="text-base font-bold text-white">Planning a Technical Project?</h4>
+                <p className="text-xs text-slate-400">Tell us about your project and we will discuss suitable support options.</p>
               </div>
             </div>
 

@@ -79,53 +79,53 @@ const allProjects = [
     id: 'paysphere',
     title: 'PaySphere — Global Fintech & Wealth Management SaaS',
     category: 'Web',
-    categoryBadge: 'Fintech SaaS',
+    categoryBadge: 'Fintech Concept',
     image: '/projects/fintech.jpg',
-    description: 'High-speed cloud financial platform managing multi-currency accounts, automated asset rebalancing, real-time portfolio analytics, and instant Stripe-backed payout settlements.',
-    fullOverview: 'PaySphere required a zero-latency, highly resilient microservices architecture capable of handling multi-million-dollar daily settlement batches. Moltivay engineered an event-driven system with MongoDB clustering, Redis transaction caching, and sub-50ms query latency.',
+    description: 'Illustrative fintech concept for multi-currency accounts, portfolio analytics, asset management, and payment integrations.',
+    fullOverview: 'PaySphere is an illustrative fintech product concept. It demonstrates how a web application could combine account management, portfolio analytics, payment integrations, and a service-oriented backend.',
     techStack: ['React', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS', 'Stripe API'],
-    metrics: '$140M+ Volume Processed',
-    timeline: '4 Months',
+    metrics: 'Fintech Product Concept',
+    timeline: 'Illustrative Concept',
     architecture: {
       frontend: 'React 18, Tailwind CSS, Recharts for financial analytics',
       backend: 'Node.js, Express microservices, Stripe Webhooks',
       database: 'MongoDB Atlas with auto-sharding & Redis cache',
-      compliance: 'PCI-DSS Level 1 audit ready, AES-256 encryption'
+      security: 'Security and payment compliance requirements need review for each deployment'
     },
-    highlights: ['Multi-currency wallet engine', 'PCI-DSS compliance grade', 'Sub-50ms API responses'],
+    highlights: ['Multi-currency account concepts', 'Portfolio analytics', 'Payment integration workflows'],
     color: 'from-blue-600 to-electric'
   },
   {
     id: 'vitalpulse',
     title: 'VitalPulse — Telehealth & Remote Patient Monitoring App',
     category: 'Mobile',
-    categoryBadge: 'iOS & Android Telehealth',
+    categoryBadge: 'Telehealth Concept',
     image: '/projects/mobile-health.jpg',
-    description: 'Dual-platform iOS and Android healthcare system featuring real-time biometric telemetry, secure HIPAA-ready doctor appointments, and vital tracking.',
-    fullOverview: 'VitalPulse connects clinical patients with doctors using Bluetooth BLE peripheral monitoring. Patients stream real-time ECG and heart rate measurements to doctors over encrypted WebRTC video sessions.',
+    description: 'Illustrative iOS and Android telehealth concept for appointment scheduling, remote vital tracking, and video visits.',
+    fullOverview: 'VitalPulse is an illustrative telehealth app concept showing how appointment scheduling, remote vital tracking, and video visits could work together. Healthcare privacy, security, and regulatory requirements must be assessed before production use.',
     techStack: ['React Native', 'TypeScript', 'WebSockets', 'Node.js', 'MongoDB'],
-    metrics: '+40% Patient Retention',
-    timeline: '5 Months',
+    metrics: 'Telehealth App Concept',
+    timeline: 'Illustrative Concept',
     architecture: {
       frontend: 'React Native for iOS and Android, 60fps gesture handling',
       backend: 'Node.js cluster with persistent WebSocket telemetry',
-      database: 'MongoDB HIPAA-compliant cluster + SQLite offline storage',
+      database: 'Cloud data storage and offline access options for evaluation',
       hardware: 'Bluetooth Low Energy (BLE) vital monitor pairing'
     },
-    highlights: ['Live Bluetooth ECG telemetry', 'Encrypted WebRTC consultations', 'Offline-first SQLite sync'],
+    highlights: ['Remote vital tracking concept', 'Video visit workflows', 'Offline access options'],
     color: 'from-electric to-indigo-600'
   },
   {
     id: 'socialsync',
     title: 'SocialSync AI — Autonomous Social Media Assistant',
     category: 'Social',
-    categoryBadge: '⭐ AI Marketing Suite',
+    categoryBadge: 'AI Content Concept',
     image: '/projects/social-assistant.jpg',
-    description: 'Autonomous AI assistant that generates viral LinkedIn and Twitter copy, schedules omnichannel campaigns across calendar views, and tracks engagement growth.',
-    fullOverview: 'SocialSync AI eliminates the manual grind of daily social media management. Powered by customized LLMs, the platform identifies trending topics, drafts viral thought-leadership threads, and auto-schedules posts across LinkedIn, X, and Instagram.',
+    description: 'Illustrative AI content workflow concept for drafting social posts, planning campaigns, and reviewing engagement.',
+    fullOverview: 'SocialSync AI is an illustrative product concept for organizing AI-assisted copy drafts, a social content calendar, and engagement analytics. Integrations and publishing workflows would depend on the selected social platforms.',
     techStack: ['React', 'OpenAI API', 'Node.js', 'Express', 'Tailwind CSS'],
-    metrics: '20+ Hours Saved / Week',
-    timeline: '3 Months',
+    metrics: 'AI Content Workflow',
+    timeline: 'Illustrative Concept',
     architecture: {
       frontend: 'React with interactive Drag-and-Drop calendar',
       aiEngine: 'Fine-tuned LLM prompts & viral hook generators',
@@ -139,13 +139,13 @@ const allProjects = [
     id: 'cloudnexus',
     title: 'CloudNexus — Distributed Enterprise DevOps Portal',
     category: 'Web',
-    categoryBadge: 'Cloud Infrastructure',
     image: '/projects/fintech.jpg',
-    description: 'Centralized observability portal for Kubernetes clusters, continuous integration pipeline metrics, and automated infrastructure provisioning.',
-    fullOverview: 'CloudNexus gives infrastructure teams real-time visibility into thousands of containerized microservices. Moltivay built a high-throughput telemetry aggregator that visualizes CPU/Memory spikes and automates canary rollbacks.',
+    categoryBadge: 'Cloud Platform Concept',
+    description: 'Illustrative cloud operations portal concept for infrastructure monitoring, deployment visibility, and provisioning workflows.',
+    fullOverview: 'CloudNexus is an illustrative cloud operations concept covering infrastructure dashboards, deployment pipeline visibility, and provisioning workflows. The final integrations and capacity requirements depend on the target environment.',
     techStack: ['React', 'Go', 'Docker', 'GraphQL', 'Tailwind CSS', 'AWS'],
-    metrics: '99.99% Guaranteed Uptime',
-    timeline: '6 Months',
+    metrics: 'Cloud Operations Concept',
+    timeline: 'Illustrative Concept',
     architecture: {
       frontend: 'React with real-time Canvas telemetry graphing',
       backend: 'Go & Node.js edge proxy with GraphQL subscriptions',
@@ -159,33 +159,33 @@ const allProjects = [
     id: 'fitmotion',
     title: 'FitMotion — AI Form Coach & Kinetic Workout Mobile App',
     category: 'Mobile',
-    categoryBadge: 'AI Computer Vision',
+    categoryBadge: 'Fitness App Concept',
     image: '/projects/mobile-health.jpg',
-    description: 'Computer-vision powered mobile personal trainer analyzing exercise posture and rep execution with on-device CoreML and TensorFlow Lite.',
-    fullOverview: 'FitMotion acts as a personal fitness trainer in your pocket. Using native smartphone cameras, the on-device AI tracks 17 joint landmarks in real time, delivering instant haptic corrections when a user rounds their spine or misses proper squat depth.',
+    description: 'Illustrative fitness app concept for guided workouts and on-device movement analysis.',
+    fullOverview: 'FitMotion is an illustrative fitness app concept exploring guided workouts, camera-based movement analysis, and feedback. Any model accuracy, supported devices, and health-related use require separate testing and validation.',
     techStack: ['Flutter', 'Python', 'CoreML', 'Firebase', 'Node.js'],
-    metrics: '150k+ Active Workouts',
-    timeline: '4.5 Months',
+    metrics: 'Fitness App Concept',
+    timeline: 'Illustrative Concept',
     architecture: {
       frontend: 'Flutter cross-platform with custom native ML views',
-      aiModel: 'On-device CoreML (iOS) and TFLite (Android) 30fps model',
+      aiModel: 'On-device model options for iOS and Android',
       backend: 'Firebase Auth & Node.js workout telemetry sync',
       haptics: 'Custom sensory vibration engine on form errors'
     },
-    highlights: ['Real-time joint tracking', 'Haptic feedback on form errors', 'Personalized audio coaching'],
+    highlights: ['Movement analysis concept', 'In-app feedback options', 'Guided workout flows'],
     color: 'from-emerald-500 to-teal-600'
   },
   {
     id: 'trendpulse',
     title: 'TrendPulse — Cross-Network AI Content Engine',
     category: 'Social',
-    categoryBadge: '⭐ Viral Intelligence',
+    categoryBadge: 'AI Content Concept',
     image: '/projects/social-assistant.jpg',
-    description: 'Generative trend discovery tool enabling brands to turn breaking industry news into viral carousel slides and engaging social threads.',
-    fullOverview: 'TrendPulse constantly scrapes tech news feeds, financial wires, and Reddit discussions. When a viral topic emerges, it instantly creates formatted PDF carousels and Twitter mega-threads ready for one-click publishing.',
+    description: 'Illustrative AI content concept for turning selected topics into draft carousel and social post ideas.',
+    fullOverview: 'TrendPulse is an illustrative content workflow concept showing how selected topics could be summarized into draft carousels and social posts. Data sources, rights, and publishing integrations would be reviewed before implementation.',
     techStack: ['React', 'LangChain', 'Node.js', 'PostgreSQL', 'Redis'],
-    metrics: '3.4x Engagement Lift',
-    timeline: '2.5 Months',
+    metrics: 'AI Content Workflow',
+    timeline: 'Illustrative Concept',
     architecture: {
       frontend: 'React carousel studio with live slide previewing',
       intelligence: 'LangChain retrieval pipeline & summarization agents',
@@ -265,7 +265,7 @@ const PortfolioPage = () => {
               speed="paragraph"
               className="text-lg sm:text-xl text-text-muted max-w-2xl mx-auto leading-relaxed mb-10"
             >
-              Explore how Moltivay Solutions architects high-speed web apps, native mobile apps, and autonomous Social Media Assistant systems with zero compromises.
+              Explore illustrative concepts that demonstrate approaches to web apps, mobile products, cloud platforms, and AI workflows.
             </LetterReveal>
 
             {/* Impact Metric Strip */}
@@ -276,20 +276,20 @@ const PortfolioPage = () => {
               className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-12"
             >
               <div className="p-4 rounded-2xl bg-white/90 backdrop-blur-md border border-slate-200/80 shadow-clean hover:shadow-card-hover transition-all duration-300">
-                <div className="text-2xl sm:text-3xl font-extrabold text-electric font-heading">$140M+</div>
-                <div className="text-xs text-text-muted font-medium mt-1">Processed Volume</div>
+                <div className="text-2xl sm:text-3xl font-extrabold text-electric font-heading">Web</div>
+                <div className="text-xs text-text-muted font-medium mt-1">Application Concepts</div>
               </div>
               <div className="p-4 rounded-2xl bg-white/90 backdrop-blur-md border border-slate-200/80 shadow-clean hover:shadow-card-hover transition-all duration-300">
-                <div className="text-2xl sm:text-3xl font-extrabold text-navy font-heading">50+</div>
-                <div className="text-xs text-text-muted font-medium mt-1">Digital Products Shipped</div>
+                <div className="text-2xl sm:text-3xl font-extrabold text-navy font-heading">Mobile</div>
+                <div className="text-xs text-text-muted font-medium mt-1">iOS & Android Concepts</div>
               </div>
               <div className="p-4 rounded-2xl bg-white/90 backdrop-blur-md border border-slate-200/80 shadow-clean hover:shadow-card-hover transition-all duration-300">
-                <div className="text-2xl sm:text-3xl font-extrabold text-accent font-heading">20+ Hrs</div>
-                <div className="text-xs text-text-muted font-medium mt-1">Saved / Wk via AI Assistant</div>
+                <div className="text-2xl sm:text-3xl font-extrabold text-accent font-heading">AI</div>
+                <div className="text-xs text-text-muted font-medium mt-1">Workflow Concepts</div>
               </div>
               <div className="p-4 rounded-2xl bg-white/90 backdrop-blur-md border border-slate-200/80 shadow-clean hover:shadow-card-hover transition-all duration-300">
-                <div className="text-2xl sm:text-3xl font-extrabold text-emerald-600 font-heading">99.99%</div>
-                <div className="text-xs text-text-muted font-medium mt-1">SLA Cloud Reliability</div>
+                <div className="text-2xl sm:text-3xl font-extrabold text-emerald-600 font-heading">Cloud</div>
+                <div className="text-xs text-text-muted font-medium mt-1">Platform Concepts</div>
               </div>
             </motion.div>
 

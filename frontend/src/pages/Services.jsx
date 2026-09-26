@@ -115,9 +115,9 @@ const serviceDetails = [
     category: 'qa',
     icon: CheckCircle2,
     title: 'QA & Automated Testing',
-    tagline: 'Rigorous manual and automated testing guaranteeing stability, security, and speed.',
-    description: 'Quality is embedded into our development lifecycle from day one. Our QA engineers execute rigorous automated test suites and exploratory tests to catch edge cases and ensure zero regressions upon every release.',
-    badge: 'Zero-Defect Guarantee',
+    tagline: 'Manual and automated testing to help improve stability, security, and performance.',
+    description: 'Quality checks can be integrated into the development lifecycle. Automated and exploratory tests help identify edge cases and reduce regression risk before release.',
+    badge: 'Quality-Focused Testing',
     color: 'from-emerald-500 to-teal-600',
     accentColor: 'border-emerald-500/30 text-emerald-600 bg-emerald-50',
     deliverables: [
@@ -134,14 +134,14 @@ const serviceDetails = [
     id: 'maintenance-support',
     category: 'support',
     icon: Headphones,
-    title: '24/7 Maintenance & Cloud Support',
-    tagline: '24/7 proactive system monitoring, security updates, and performance optimization.',
-    description: 'Shipping software is only the first step. Moltivay Solutions provides ongoing maintenance, proactive infrastructure health checks, library upgrades, and dedicated engineering support to protect your business uptime.',
-    badge: '99.98% SLA Uptime',
+    title: 'Cloud Maintenance & Support',
+    tagline: 'Ongoing system monitoring, security updates, and performance optimization options.',
+    description: 'After launch, maintenance can include infrastructure health checks, dependency upgrades, performance tuning, and engineering support scoped to your needs.',
+    badge: 'Monitoring & Maintenance',
     color: 'from-blue-600 to-navy',
     accentColor: 'border-blue-700/30 text-blue-700 bg-blue-50',
     deliverables: [
-      '24/7 Server & Database Health Monitoring',
+      'Server & Database Health Monitoring Options',
       'Scheduled Security Patching & Dependency Updates',
       'Performance Tuning & Database Index Optimization',
       'Regular Cloud Backups & Disaster Recovery Protocols',
@@ -231,20 +231,20 @@ const ServicesPage = () => {
               className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-12"
             >
               <div className="p-4 rounded-2xl bg-white/80 backdrop-blur-md border border-slate-200/80 shadow-clean hover:shadow-card-hover transition-all duration-300">
-                <div className="text-2xl sm:text-3xl font-extrabold text-electric font-heading">99.98%</div>
-                <div className="text-xs text-text-muted font-medium mt-1">Uptime SLA Reliability</div>
+                <div className="text-2xl sm:text-3xl font-extrabold text-electric font-heading">Cloud-ready</div>
+                <div className="text-xs text-text-muted font-medium mt-1">Architecture</div>
               </div>
               <div className="p-4 rounded-2xl bg-white/80 backdrop-blur-md border border-slate-200/80 shadow-clean hover:shadow-card-hover transition-all duration-300">
-                <div className="text-2xl sm:text-3xl font-extrabold text-navy font-heading">2-Week</div>
-                <div className="text-xs text-text-muted font-medium mt-1">Agile Sprint Delivery</div>
+                <div className="text-2xl sm:text-3xl font-extrabold text-navy font-heading">Agile</div>
+                <div className="text-xs text-text-muted font-medium mt-1">Iterative Delivery</div>
               </div>
               <div className="p-4 rounded-2xl bg-white/80 backdrop-blur-md border border-slate-200/80 shadow-clean hover:shadow-card-hover transition-all duration-300">
-                <div className="text-2xl sm:text-3xl font-extrabold text-accent font-heading">100%</div>
-                <div className="text-xs text-text-muted font-medium mt-1">Automated QA Audited</div>
+                <div className="text-2xl sm:text-3xl font-extrabold text-accent font-heading">Quality</div>
+                <div className="text-xs text-text-muted font-medium mt-1">Testing Practices</div>
               </div>
               <div className="p-4 rounded-2xl bg-white/80 backdrop-blur-md border border-slate-200/80 shadow-clean hover:shadow-card-hover transition-all duration-300">
-                <div className="text-2xl sm:text-3xl font-extrabold text-emerald-600 font-heading">24/7</div>
-                <div className="text-xs text-text-muted font-medium mt-1">Executive Support</div>
+                <div className="text-2xl sm:text-3xl font-extrabold text-emerald-600 font-heading">Ongoing</div>
+                <div className="text-xs text-text-muted font-medium mt-1">Project Support</div>
               </div>
             </motion.div>
 
@@ -474,12 +474,12 @@ const ServicesPage = () => {
                               <p className="text-white/90 italic">"Here are 3 high-converting LinkedIn hooks generated with automated multichannel queueing for Twitter & IG..."</p>
                               <div className="flex items-center justify-between pt-2 border-t border-white/20 text-[11px] text-white/80">
                                 <span>Multi-Platform Synced</span>
-                                <span className="font-bold text-white">45 Posts Scheduled</span>
+                                <span className="font-bold text-white">Queue Setup</span>
                               </div>
                             </div>
                             <div className="flex items-center justify-between text-xs pt-1">
                               <span>Weekly Time Saved:</span>
-                              <span className="font-bold bg-white text-accent px-2 py-0.5 rounded-md">20+ Hours / Week</span>
+                              <span className="font-bold bg-white text-accent px-2 py-0.5 rounded-md">Content Calendar</span>
                             </div>
                           </div>
                         )}
@@ -494,15 +494,15 @@ const ServicesPage = () => {
                             <div className="space-y-2 text-xs">
                               <div className="flex items-center justify-between p-2.5 bg-emerald-50 text-emerald-900 rounded-lg">
                                 <span>✓ End-to-End Test Suite</span>
-                                <span className="font-mono font-bold text-emerald-700">142/142 Passed</span>
+                                <span className="font-mono font-bold text-emerald-700">Test Examples</span>
                               </div>
                               <div className="flex items-center justify-between p-2.5 bg-slate-50 text-navy rounded-lg">
                                 <span>✓ OWASP Security Scan</span>
-                                <span className="font-semibold text-emerald-600">Zero Vulnerabilities</span>
+                                <span className="font-semibold text-emerald-600">Review Required</span>
                               </div>
                               <div className="flex items-center justify-between p-2.5 bg-slate-50 text-navy rounded-lg">
                                 <span>✓ Multi-Device Load Test</span>
-                                <span className="font-mono text-electric">10,000 Concurrent Req</span>
+                                <span className="font-mono text-electric">Performance Scenarios</span>
                               </div>
                             </div>
                           </div>
@@ -514,22 +514,22 @@ const ServicesPage = () => {
                             <div className="flex items-center justify-between">
                               <div className="flex items-center space-x-2">
                                 <div className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping" />
-                                <span className="text-xs font-bold text-emerald-400">Live Uptime Monitor</span>
+                                <span className="text-xs font-bold text-emerald-400">Monitoring Options</span>
                               </div>
                               <span className="text-[11px] font-mono text-slate-400">Global Cluster</span>
                             </div>
                             <div className="grid grid-cols-2 gap-3 pt-2">
                               <div className="bg-navy-800 p-3 rounded-xl">
-                                <div className="text-[11px] text-slate-400">Average Uptime</div>
-                                <div className="text-xl font-bold text-white mt-1">99.99%</div>
+                                <div className="text-[11px] text-slate-400">Monitoring Scope</div>
+                                <div className="text-xl font-bold text-white mt-1">Project-based</div>
                               </div>
                               <div className="bg-navy-800 p-3 rounded-xl">
-                                <div className="text-[11px] text-slate-400">SLA Response</div>
-                                <div className="text-xl font-bold text-electric mt-1">&lt; 15 min</div>
+                                <div className="text-[11px] text-slate-400">Support Plan</div>
+                                <div className="text-xl font-bold text-electric mt-1">Agreed Scope</div>
                               </div>
                             </div>
                             <div className="text-xs text-slate-300 bg-navy-800/80 p-3 rounded-xl">
-                              24/7 proactive patch management, automated backups, and emergency engineering escalation.
+                              Monitoring, patch management, backups, and escalation can be scoped to project needs.
                             </div>
                           </div>
                         )}
@@ -568,7 +568,7 @@ const ServicesPage = () => {
                   title: 'Discovery & Blueprint',
                   desc: 'Comprehensive technical scoping, database schema architecture, and milestone roadmapping with strict NDAs.',
                   icon: Terminal,
-                  tag: 'Days 1–3'
+                  tag: 'Initial Planning'
                 },
                 {
                   step: '02',
@@ -579,24 +579,24 @@ const ServicesPage = () => {
                 },
                 {
                   step: '03',
-                  title: '2-Week Sprints',
+                  title: 'Agile Sprints',
                   desc: 'Rapid full-stack engineering with daily standups, direct Slack sync, and Friday staging environment releases.',
                   icon: Zap,
                   tag: 'Continuous'
                 },
                 {
                   step: '04',
-                  title: 'Automated QA Audit',
+                  title: 'Quality Review',
                   desc: 'Playwright E2E suites, multi-device regression passes, and OWASP security vulnerability auditing.',
                   icon: ShieldCheck,
-                  tag: 'Zero-Defect'
+                  tag: 'QA Planning'
                 },
                 {
                   step: '05',
-                  title: 'Cloud Launch & 24/7 SLA',
-                  desc: 'Production rollout on AWS/Docker clusters paired with 24/7 uptime monitoring and automated backups.',
+                  title: 'Cloud Launch & Support',
+                  desc: 'Production rollout on AWS/Docker with monitoring and backup options scoped to the project.',
                   icon: Activity,
-                  tag: '99.98% SLA'
+                  tag: 'Scoped Support'
                 }
               ].map((item, idx) => {
                 const StepIcon = item.icon;

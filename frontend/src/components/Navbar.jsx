@@ -25,6 +25,13 @@ const Navbar = () => {
     setIsMobileMenuOpen(false);
   }, [location.pathname]);
 
+  const handleNavClick = (path) => {
+    setIsMobileMenuOpen(false);
+    if (location.pathname === path && !location.hash) {
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    }
+  };
+
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'Services', path: '/services' },
@@ -44,7 +51,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo & Company Name */}
-          <Link to="/" className="flex items-center space-x-3 group">
+          <Link to="/" onClick={() => handleNavClick('/')} className="flex items-center space-x-3 group">
             <img
               src="/logo.png"
               alt="Moltivay Solutions"
@@ -66,6 +73,7 @@ const Navbar = () => {
               <NavLink
                 key={link.name}
                 to={link.path}
+                onClick={() => handleNavClick(link.path)}
                 className={({ isActive }) =>
                   `px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
                     isActive
@@ -96,6 +104,8 @@ const Navbar = () => {
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="p-2 rounded-lg text-navy hover:text-electric hover:bg-slate-100 focus:outline-none transition-colors"
               aria-label="Toggle Navigation Menu"
+              aria-expanded={isMobileMenuOpen}
+              aria-controls="mobile-navigation"
             >
               {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -105,12 +115,13 @@ const Navbar = () => {
 
       {/* Mobile Dropdown Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-3 shadow-xl animate-in slide-in-from-top duration-200">
+        <div id="mobile-navigation" className="md:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-3 shadow-xl animate-in slide-in-from-top duration-200">
           <div className="flex flex-col space-y-1">
             {navLinks.map((link) => (
               <NavLink
                 key={link.name}
                 to={link.path}
+                onClick={() => handleNavClick(link.path)}
                 className={({ isActive }) =>
                   `px-4 py-3 rounded-lg text-base font-medium transition-colors ${
                     isActive

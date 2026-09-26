@@ -23,7 +23,7 @@ const serviceOptions = [
   'UI/UX Design',
   '⭐ Social Media Assistant',
   'QA & Automated Testing',
-  '24/7 Cloud Maintenance'
+  'Cloud Maintenance & Support'
 ];
 
 const budgetRanges = [
@@ -109,7 +109,7 @@ const ContactForm = () => {
           loading: false,
           success: true,
           error: null,
-          message: data.message || 'Inquiry successfully transmitted! Our engineering desk will review and contact you shortly.',
+          message: data.message || 'Your inquiry was delivered to our project team. We will follow up by email.',
         });
         setFormData({
           name: '',
@@ -177,7 +177,7 @@ const ContactForm = () => {
                       <div className="flex items-center space-x-2">
                         <span className="w-2 h-2 rounded-full bg-emerald-200 animate-ping" />
                         <span className="text-[11px] font-bold uppercase tracking-wider text-emerald-100">
-                          Online Now • Fast Response
+                          Contact us on WhatsApp
                         </span>
                       </div>
                       <div className="text-base font-extrabold text-white">+92 323 5678381</div>
@@ -192,7 +192,7 @@ const ContactForm = () => {
                 <div className="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-1">
                   <div className="flex items-center space-x-2 text-xs font-semibold text-slate-400">
                     <Mail className="w-4 h-4 text-electric" />
-                    <span>Official Email Inbox (Brevo Verified)</span>
+                    <span>Project inquiries</span>
                   </div>
                   <a
                     href="mailto:ahmedghulam622@gmail.com"
@@ -200,7 +200,7 @@ const ContactForm = () => {
                   >
                     ahmedghulam622@gmail.com
                   </a>
-                  <p className="text-[11px] text-slate-400">Guaranteed replies within 24 business hours.</p>
+                  <p className="text-[11px] text-slate-400">Response times vary by project and availability.</p>
                 </div>
 
                 {/* Physical HQ Address */}
@@ -219,11 +219,11 @@ const ContactForm = () => {
                 <div className="pt-2 border-t border-white/10 grid grid-cols-2 gap-3 text-xs text-slate-300">
                   <div className="flex items-center space-x-2">
                     <ShieldCheck className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-                    <span>Strict Mutual NDA</span>
+                    <span>Project confidentiality</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Clock className="w-4 h-4 text-electric flex-shrink-0" />
-                    <span>2-Hour Initial Review</span>
+                    <span>Project Discovery</span>
                   </div>
                 </div>
 
@@ -246,7 +246,7 @@ const ContactForm = () => {
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="font-bold text-electric">3.</span>
-                  <span>You receive a structured 2-week sprint roadmap with fixed milestone pricing.</span>
+                  <span>You receive a project roadmap with milestones and pricing options based on scope.</span>
                 </li>
               </ul>
             </div>
@@ -266,7 +266,7 @@ const ContactForm = () => {
                 Send Us Your Project Vision
               </h3>
               <p className="text-sm text-text-muted mt-1">
-                Select your service, estimated budget, and scope. All transmissions are encrypted and Brevo-verified.
+                Select your service, estimated budget, and scope. Your inquiry will be sent to our project team.
               </p>
             </div>
 
@@ -347,6 +347,7 @@ const ContactForm = () => {
                       id="name"
                       name="name"
                       required
+                      maxLength={120}
                       value={formData.name}
                       onChange={handleChange}
                       placeholder="e.g. Alex Henderson"
@@ -366,6 +367,7 @@ const ContactForm = () => {
                       id="email"
                       name="email"
                       required
+                      maxLength={254}
                       value={formData.email}
                       onChange={handleChange}
                       placeholder="alex@company.com"
@@ -416,6 +418,7 @@ const ContactForm = () => {
                   name="message"
                   required
                   rows={4}
+                  maxLength={5000}
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="Outline your application goals, target platform (Web/iOS/Android/AI), desired features, or launch timeline..."
@@ -433,7 +436,7 @@ const ContactForm = () => {
                   {status.loading ? (
                     <>
                       <Loader2 className="w-5 h-5 mr-2 animate-spin" />
-                      <span>Transmitting via Brevo...</span>
+                      <span>Sending your inquiry...</span>
                     </>
                   ) : (
                     <>

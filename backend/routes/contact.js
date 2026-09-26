@@ -15,18 +15,26 @@ router.post('/', async (req, res) => {
     const { name, email, subject, message } = req.body;
 
     // Step a: Validation
-    if (!name || !name.trim()) {
+    if (typeof name !== 'string' || !name.trim()) {
       return res.status(400).json({
         success: false,
         error: 'Name is required.',
       });
     }
 
-    if (!email || !email.trim()) {
+    if (name.trim().length > 120) {
+      return res.status(400).json({ success: false, error: 'Name must be 120 characters or fewer.' });
+    }
+
+    if (typeof email !== 'string' || !email.trim()) {
       return res.status(400).json({
         success: false,
         error: 'Email address is required.',
       });
+    }
+
+    if (email.trim().length > 254) {
+      return res.status(400).json({ success: false, error: 'Email address is too long.' });
     }
 
     const emailRegex = /^\S+@\S+\.\S+$/;
@@ -37,11 +45,19 @@ router.post('/', async (req, res) => {
       });
     }
 
-    if (!message || !message.trim()) {
+    if (typeof message !== 'string' || !message.trim()) {
       return res.status(400).json({
         success: false,
         error: 'Message is required.',
       });
+    }
+
+    if (message.trim().length > 5000) {
+      return res.status(400).json({ success: false, error: 'Message must be 5,000 characters or fewer.' });
+    }
+
+    if (subject != null && (typeof subject !== 'string' || subject.trim().length > 200)) {
+      return res.status(400).json({ success: false, error: 'Subject must be 200 characters or fewer.' });
     }
 
     // Step b: Save to MongoDB
@@ -67,26 +83,35 @@ router.post('/', async (req, res) => {
     }
 
     // Step c: Call Brevo API to send email to admin
-    let emailResult = null;
     try {
-      emailResult = await sendContactNotification({
+      const emailResult = await sendContactNotification({
         name: name.trim(),
         email: email.trim(),
         subject: (subject && subject.trim()) || 'New Website Inquiry',
         message: message.trim(),
       });
+
+      if (!emailResult.success || emailResult.simulated) {
+        return res.status(503).json({
+          success: false,
+          error: 'Email delivery is not configured. Please contact us directly by email or WhatsApp.',
+        });
+      }
     } catch (brevoErr) {
       console.error('[Contact Route] Brevo notification warning:', brevoErr.message);
-      // If Brevo fails due to invalid key, we still report what happened
+      return res.status(502).json({
+        success: false,
+        error: 'We could not deliver your inquiry. Please try again or contact us directly by email or WhatsApp.',
+      });
     }
 
     // Step d: Return { success: true }
     return res.status(200).json({
       success: true,
-      message: 'Thank you! Your message has been received. Our team will contact you shortly.',
+      message: 'Thank you. Your inquiry was delivered to our project team. We will follow up using the email address you provided.',
       data: {
         id: savedContact ? savedContact._id : null,
-        emailSent: emailResult ? emailResult.success : false,
+        emailSent: true,
       },
     });
   } catch (error) {

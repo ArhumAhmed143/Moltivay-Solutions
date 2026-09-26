@@ -24,28 +24,28 @@ const featuredProjects = [
   },
   {
     id: 'paysphere',
-    title: 'PaySphere — Global Fintech & Wealth Management SaaS',
-    category: 'Web App',
+    title: 'PaySphere — Fintech Product Concept',
+    category: 'Fintech Concept',
     image: '/projects/fintech.jpg',
-    description: 'High-speed cloud financial platform managing multi-currency accounts, automated asset rebalancing, and instant Stripe-backed payout settlements.',
+    description: 'Illustrative fintech concept for multi-currency accounts, portfolio analytics, asset management, and payment integrations.',
     techStack: ['React', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS', 'Stripe API'],
     link: '/portfolio'
   },
   {
     id: 'vitalpulse',
-    title: 'VitalPulse — Telehealth & Remote Patient Monitoring',
-    category: 'Mobile App',
+    title: 'VitalPulse — Telehealth App Concept',
+    category: 'Telehealth Concept',
     image: '/projects/mobile-health.jpg',
-    description: 'Dual-platform iOS and Android healthcare system featuring real-time biometric telemetry, secure HIPAA-ready doctor appointments, and vital tracking.',
+    description: 'Illustrative iOS and Android telehealth concept for appointment scheduling, remote vital tracking, and video visits.',
     techStack: ['React Native', 'TypeScript', 'WebSockets', 'Node.js', 'MongoDB'],
     link: '/portfolio'
   },
   {
     id: 'socialsync',
-    title: 'SocialSync AI — Autonomous Social Media Assistant',
-    category: 'Social Media Assistant',
+    title: 'SocialSync AI — Content Workflow Concept',
+    category: 'AI Content Concept',
     image: '/projects/social-assistant.jpg',
-    description: 'Autonomous AI assistant that generates viral LinkedIn/Twitter copy, schedules omnichannel campaigns across calendars, and tracks user engagement.',
+    description: 'Illustrative AI content workflow concept for drafting social posts, planning campaigns, and reviewing engagement.',
     techStack: ['React', 'OpenAI API', 'Node.js', 'Express', 'Tailwind CSS'],
     link: '/portfolio'
   }

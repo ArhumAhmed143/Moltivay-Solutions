@@ -12,13 +12,21 @@ export const sendContactNotification = async ({ name, email, subject, message })
       '[Brevo Service] BREVO_API_KEY is not configured or using placeholder. In development mode, email dispatch is simulated.'
     );
     return {
-      success: true,
+      success: false,
       simulated: true,
       message: 'Simulated email dispatch - configure BREVO_API_KEY in .env for production sending.',
     };
   }
 
   const endpoint = 'https://api.brevo.com/v3/smtp/email';
+  const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (character) => ({
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;',
+  })[character]);
+
   const emailPayload = {
     sender: {
       name: 'Moltivay Solutions',
@@ -64,19 +72,19 @@ export const sendContactNotification = async ({ name, email, subject, message })
             <div class="content">
               <div class="field-row">
                 <div class="label">Client Name</div>
-                <div class="value">${name}</div>
+                <div class="value">${escapeHtml(name)}</div>
               </div>
               <div class="field-row">
                 <div class="label">Email Address</div>
-                <div class="value"><a href="mailto:${email}" style="color: #0066FF; text-decoration: none;">${email}</a></div>
+                <div class="value"><a href="mailto:${escapeHtml(email)}" style="color: #0066FF; text-decoration: none;">${escapeHtml(email)}</a></div>
               </div>
               <div class="field-row">
                 <div class="label">Subject</div>
-                <div class="value">${subject || 'General Inquiry'}</div>
+                <div class="value">${escapeHtml(subject || 'General Inquiry')}</div>
               </div>
               <div class="field-row">
                 <div class="label">Client Message</div>
-                <div class="message-box">${message}</div>
+                <div class="message-box">${escapeHtml(message)}</div>
               </div>
             </div>
             <div class="footer">

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Linkedin, Github, Twitter, ArrowUp, Mail, Phone, MapPin, Heart } from 'lucide-react';
+import { Github, ArrowUp, Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -42,31 +42,13 @@ const Footer = () => {
             {/* Social Icons */}
             <div className="flex items-center space-x-3 pt-2">
               <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noreferrer"
-                className="w-10 h-10 rounded-lg bg-navy-800 hover:bg-electric flex items-center justify-center text-slate-300 hover:text-white transition-colors duration-200"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="w-4 h-4" />
-              </a>
-              <a
-                href="https://github.com"
+                href="https://github.com/ArhumAhmed143"
                 target="_blank"
                 rel="noreferrer"
                 className="w-10 h-10 rounded-lg bg-navy-800 hover:bg-electric flex items-center justify-center text-slate-300 hover:text-white transition-colors duration-200"
                 aria-label="GitHub"
               >
                 <Github className="w-4 h-4" />
-              </a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noreferrer"
-                className="w-10 h-10 rounded-lg bg-navy-800 hover:bg-electric flex items-center justify-center text-slate-300 hover:text-white transition-colors duration-200"
-                aria-label="Twitter"
-              >
-                <Twitter className="w-4 h-4" />
               </a>
             </div>
           </div>

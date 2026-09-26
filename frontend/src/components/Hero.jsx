@@ -123,17 +123,17 @@ const Hero = () => {
                   {/* Top Metric Bar */}
                   <div className="grid grid-cols-2 gap-3">
                     <div className="bg-blue-50/50 p-3.5 rounded-xl border border-blue-100/60">
-                      <div className="text-[11px] text-text-muted font-medium uppercase tracking-wider">Cloud Speed</div>
+                      <div className="text-[11px] text-text-muted font-medium uppercase tracking-wider">Architecture</div>
                       <div className="text-xl font-bold text-navy flex items-center mt-1">
-                        99.98%
-                        <span className="text-[10px] ml-2 px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-700 font-semibold">+0.4%</span>
+                        Cloud-ready
+                        <span className="text-[10px] ml-2 px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-700 font-semibold">Scalable</span>
                       </div>
                     </div>
                     <div className="bg-slate-50 p-3.5 rounded-xl border border-slate-200/60">
-                      <div className="text-[11px] text-text-muted font-medium uppercase tracking-wider">Code Quality</div>
+                      <div className="text-[11px] text-text-muted font-medium uppercase tracking-wider">Engineering</div>
                       <div className="text-xl font-bold text-electric flex items-center mt-1">
-                        Grade A+
-                        <span className="text-[10px] ml-2 px-1.5 py-0.5 rounded bg-blue-100 text-electric font-semibold">Verified</span>
+                        Quality-focused
+                        <span className="text-[10px] ml-2 px-1.5 py-0.5 rounded bg-blue-100 text-electric font-semibold">Testable</span>
                       </div>
                     </div>
                   </div>
@@ -151,18 +151,12 @@ const Hero = () => {
                     <div className="py-4 space-y-2.5">
                       <div className="flex justify-between text-xs">
                         <span className="text-slate-400">Frontend Engine (React / Vite)</span>
-                        <span className="text-emerald-400 font-mono">Ready (0.2s)</span>
-                      </div>
-                      <div className="w-full bg-navy-800 rounded-full h-1.5">
-                        <div className="bg-electric h-1.5 rounded-full w-[94%]" />
+                        <span className="text-emerald-400 font-mono">Component-based</span>
                       </div>
 
                       <div className="flex justify-between text-xs pt-1">
                         <span className="text-slate-400">Mobile API & Cloud Services</span>
-                        <span className="text-emerald-400 font-mono">Synchronized</span>
-                      </div>
-                      <div className="w-full bg-navy-800 rounded-full h-1.5">
-                        <div className="bg-accent h-1.5 rounded-full w-[88%]" />
+                        <span className="text-emerald-400 font-mono">Integration-ready</span>
                       </div>
                     </div>
                   </div>
@@ -193,7 +187,7 @@ const Hero = () => {
                 className="absolute -bottom-6 -left-6 bg-white/95 backdrop-blur-md px-4 py-3 rounded-xl shadow-lg border border-slate-100 flex items-center space-x-3 hidden sm:flex"
               >
                 <div className="w-9 h-9 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-600 font-bold text-sm">
-                  100%
+                  <Code2 className="w-4 h-4" />
                 </div>
                 <div>
                   <div className="text-xs font-bold text-navy">Scalable Architecture</div>
