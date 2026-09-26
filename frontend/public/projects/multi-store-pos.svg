@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" fill="none">
+  <rect width="1280" height="800" fill="#F4F7FC"/>
+  <rect width="282" height="800" fill="#0B1735"/>
+  <rect x="30" y="26" width="54" height="54" rx="14" fill="#0866F5"/>
+  <path d="M42 43h7l5 24h24l5-17H52" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="58" cy="74" r="3" fill="#fff"/><circle cx="74" cy="74" r="3" fill="#fff"/>
+  <text x="99" y="59" fill="#fff" font-family="Arial,sans-serif" font-size="25" font-weight="700">Multi-Store</text>
+  <text x="29" y="143" fill="#fff" font-family="Arial,sans-serif" font-size="52" font-weight="800">POS</text>
+  <text x="31" y="173" fill="#2BCB72" font-family="Arial,sans-serif" font-size="17" font-weight="700">POINT OF SALE</text>
+  <text x="31" y="212" fill="#D7E0F1" font-family="Arial,sans-serif" font-size="14">One cloud platform for all your</text>
+  <text x="31" y="233" fill="#D7E0F1" font-family="Arial,sans-serif" font-size="14">stores, sales, staff and reports.</text>
+  <g font-family="Arial,sans-serif">
+    <circle cx="54" cy="293" r="21" fill="#1467E8"/><path d="M44 293h20v13H44zM47 288h14v5H47z" fill="#fff"/>
+    <text x="88" y="291" fill="#fff" font-size="17" font-weight="700">Multi-Store Management</text>
+    <text x="88" y="311" fill="#B9C6DD" font-size="12">Manage locations in one place</text>
+    <circle cx="54" cy="366" r="21" fill="#22A968"/><path d="M43 376h4v-9h5v9h4v-15h5v15h4v-21h5v21" fill="#fff"/>
+    <text x="88" y="364" fill="#fff" font-size="17" font-weight="700">Real-Time Analytics</text>
+    <text x="88" y="384" fill="#B9C6DD" font-size="12">Sales, inventory and reports</text>
+    <circle cx="54" cy="439" r="21" fill="#1D6AF0"/><path d="M48 439v-5a6 6 0 0 1 12 0v5M46 439h16v12H46z" stroke="#fff" stroke-width="2"/>
+    <text x="88" y="437" fill="#fff" font-size="17" font-weight="700">Secure &amp; Reliable</text>
+    <text x="88" y="457" fill="#B9C6DD" font-size="12">Protected retail operations</text>
+    <circle cx="54" cy="512" r="21" fill="#E88412"/><circle cx="49" cy="508" r="5" stroke="#fff" stroke-width="2"/><circle cx="61" cy="508" r="5" stroke="#fff" stroke-width="2"/><path d="M41 522c1-7 14-7 16 0m-2 0c1-7 14-7 16 0" stroke="#fff" stroke-width="2"/>
+    <text x="88" y="510" fill="#fff" font-size="17" font-weight="700">Easy to Use</text>
+    <text x="88" y="530" fill="#B9C6DD" font-size="12">Simple tools for every store</text>
+  </g>
+  <rect x="282" width="704" height="800" fill="#fff"/>
+  <text x="324" y="57" fill="#101A36" font-family="Arial,sans-serif" font-size="26" font-weight="800">WELCOME TO MULTI POS SYSTEM</text>
+  <rect x="324" y="72" width="224" height="4" rx="2" fill="#27BA70"/>
+  <text x="324" y="104" fill="#48536A" font-family="Arial,sans-serif" font-size="15">One simple cloud platform to run stores, teams and sales.</text>
+  <rect x="324" y="127" width="620" height="230" rx="16" fill="#F7F9FC" stroke="#D9E1EC"/>
+  <rect x="340" y="143" width="240" height="199" rx="12" fill="#0C1B3C"/>
+  <rect x="435" y="159" width="48" height="48" rx="12" fill="#0C70E8"/>
+  <path d="M445 173h6l4 21h19l4-15h-25" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="366" y="238" fill="#fff" font-family="Arial,sans-serif" font-size="19" font-weight="700">Multi POS System</text>
+  <text x="379" y="260" fill="#C4D1E8" font-family="Arial,sans-serif" font-size="12">Cloud Point of Sale</text>
+  <path d="M359 274h202" stroke="#324363"/>
+  <text x="359" y="300" fill="#fff" font-family="Arial,sans-serif" font-size="16" font-weight="700">Manage Your Business</text>
+  <text x="359" y="320" fill="#25CC7A" font-family="Arial,sans-serif" font-size="13">Smarter across every store</text>
+  <text x="611" y="169" fill="#111D3A" font-family="Arial,sans-serif" font-size="19" font-weight="700">Sign in to your account</text>
+  <text x="611" y="201" fill="#525D70" font-family="Arial,sans-serif" font-size="12">Email address</text>
+  <rect x="611" y="209" width="296" height="34" rx="6" fill="#E8EEF8"/>
+  <text x="624" y="231" fill="#596477" font-family="Arial,sans-serif" font-size="13">admin@company.com</text>
+  <text x="611" y="267" fill="#525D70" font-family="Arial,sans-serif" font-size="12">Password</text>
+  <rect x="611" y="275" width="296" height="34" rx="6" fill="#E8EEF8"/>
+  <text x="624" y="297" fill="#596477" font-family="Arial,sans-serif" font-size="13">**************</text>
+  <rect x="611" y="316" width="296" height="30" rx="7" fill="#155DEB"/>
+  <text x="722" y="337" fill="#fff" font-family="Arial,sans-serif" font-size="14" font-weight="700">Sign In</text>
+  <text x="548" y="389" fill="#14203C" font-family="Arial,sans-serif" font-size="20" font-weight="800">POWERFUL DASHBOARD &amp; REPORTS</text>
+  <text x="600" y="410" fill="#667187" font-family="Arial,sans-serif" font-size="12">Sales performance across all your stores</text>
+  <rect x="324" y="429" width="620" height="333" rx="14" fill="#fff" stroke="#DCE3ED"/>
+  <rect x="324" y="429" width="144" height="333" rx="14" fill="#101F40"/>
+  <text x="344" y="462" fill="#fff" font-family="Arial,sans-serif" font-size="14" font-weight="700">MULTI POS</text>
+  <text x="344" y="499" fill="#D9E3F2" font-family="Arial,sans-serif" font-size="13">Dashboard</text>
+  <text x="344" y="531" fill="#D9E3F2" font-family="Arial,sans-serif" font-size="13">Manage Stores</text>
+  <text x="344" y="563" fill="#D9E3F2" font-family="Arial,sans-serif" font-size="13">Team &amp; Roles</text>
+  <rect x="334" y="579" width="124" height="29" rx="6" fill="#4634D9"/>
+  <text x="344" y="598" fill="#fff" font-family="Arial,sans-serif" font-size="13">Reports</text>
+  <text x="489" y="463" fill="#15203A" font-family="Arial,sans-serif" font-size="16" font-weight="700">Monthly Sales Overview</text>
+  <text x="826" y="463" fill="#626E80" font-family="Arial,sans-serif" font-size="11">By month</text>
+  <path d="M497 693h410M497 643h410M497 593h410M497 543h410" stroke="#E9EDF3"/>
+  <g fill="#23B86C"><rect x="519" y="630" width="22" height="63" rx="3"/><rect x="556" y="605" width="22" height="88" rx="3"/><rect x="593" y="616" width="22" height="77" rx="3"/><rect x="630" y="572" width="22" height="121" rx="3"/><rect x="667" y="588" width="22" height="105" rx="3"/><rect x="704" y="548" width="22" height="145" rx="3"/><rect x="741" y="565" width="22" height="128" rx="3"/><rect x="778" y="522" width="22" height="171" rx="3"/><rect x="815" y="536" width="22" height="157" rx="3"/><rect x="852" y="500" width="22" height="193" rx="3"/></g>
+  <text x="507" y="719" fill="#758095" font-family="Arial,sans-serif" font-size="11">Jan</text><text x="581" y="719" fill="#758095" font-family="Arial,sans-serif" font-size="11">Mar</text><text x="655" y="719" fill="#758095" font-family="Arial,sans-serif" font-size="11">May</text><text x="729" y="719" fill="#758095" font-family="Arial,sans-serif" font-size="11">Jul</text><text x="803" y="719" fill="#758095" font-family="Arial,sans-serif" font-size="11">Sep</text><text x="866" y="719" fill="#758095" font-family="Arial,sans-serif" font-size="11">Nov</text>
+  <rect x="986" width="294" height="800" fill="#fff"/>
+  <text x="1020" y="57" fill="#111D3A" font-family="Arial,sans-serif" font-size="23" font-weight="800">BUILT FOR GROWTH</text>
+  <rect x="1020" y="72" width="120" height="4" rx="2" fill="#27BA70"/>
+  <g font-family="Arial,sans-serif">
+    <circle cx="1048" cy="130" r="24" fill="#248B50"/><path d="M1038 134a7 7 0 0 1 2-14 9 9 0 0 1 17 3 6 6 0 0 1 0 12z" stroke="#fff" stroke-width="2"/>
+    <text x="1084" y="124" fill="#13203A" font-size="16" font-weight="700">Cloud Based</text><text x="1084" y="144" fill="#596477" font-size="11">Secure access to stores,</text><text x="1084" y="160" fill="#596477" font-size="11">teams and live reports.</text>
+    <circle cx="1048" cy="218" r="24" fill="#1767DE"/><path d="M1037 215q11-12 22 0m-18 5q7-7 14 0m-10 6q3-3 6 0" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><circle cx="1048" cy="230" r="2" fill="#fff"/>
+    <text x="1084" y="212" fill="#13203A" font-size="16" font-weight="700">Offline Support</text><text x="1084" y="232" fill="#596477" font-size="11">Keep serving customers</text><text x="1084" y="248" fill="#596477" font-size="11">during internet outages.</text>
+    <circle cx="1048" cy="306" r="24" fill="#5732BD"/><path d="M1037 299h22v5h-22zm2 6h18v12h-18z" stroke="#fff" stroke-width="2"/><path d="M1043 311h6v6h-6z" fill="#fff"/>
+    <text x="1084" y="300" fill="#13203A" font-size="16" font-weight="700">Real-Time Analytics</text><text x="1084" y="320" fill="#596477" font-size="11">Track live sales and inventory</text><text x="1084" y="336" fill="#596477" font-size="11">across all your stores.</text>
+    <circle cx="1048" cy="394" r="24" fill="#ED7B13"/><path d="M1037 405v-12l7 4v-7l8 5v-11h5v21z" stroke="#fff" stroke-width="2"/>
+    <text x="1084" y="388" fill="#13203A" font-size="16" font-weight="700">Detailed Reports</text><text x="1084" y="408" fill="#596477" font-size="11">Understand sales and business</text><text x="1084" y="424" fill="#596477" font-size="11">performance at a glance.</text>
+  </g>
+  <path d="M986 480h294v320H986z" fill="#F0F4FA"/>
+  <rect x="1008" y="501" width="250" height="150" rx="9" fill="#111D37"/>
+  <rect x="1090" y="518" width="100" height="72" rx="5" fill="#DDE8F7"/><rect x="1097" y="525" width="86" height="58" rx="3" fill="#fff"/>
+  <path d="M1104 571v-15h10v15m7 0v-27h10v27m7 0v-19h10v19m7 0v-34h10v34" fill="#25B970"/>
+  <path d="M1080 592h120l20 27h-160z" fill="#273653"/>
+  <rect x="1023" y="576" width="51" height="47" rx="5" fill="#202B42"/><path d="M1028 588h41v24h-41z" fill="#344057"/><path d="M1032 616h33" stroke="#7B879B" stroke-width="3"/>
+  <rect x="1208" y="589" width="35" height="49" rx="6" fill="#151E31"/><rect x="1212" y="595" width="27" height="28" rx="3" fill="#192C45"/><circle cx="1218" cy="630" r="2" fill="#26C879"/><circle cx="1226" cy="630" r="2" fill="#F1AB24"/><circle cx="1234" cy="630" r="2" fill="#E85151"/>
+  <rect x="986" y="652" width="294" height="148" fill="#0B1836"/>
+  <text x="1014" y="683" fill="#fff" font-family="Arial,sans-serif" font-size="16" font-weight="800">ONE POS. EVERY STORE.</text>
+  <text x="1014" y="710" fill="#C9D5E8" font-family="Arial,sans-serif" font-size="12">Real-time insights for every store.</text>
+  <text x="1014" y="730" fill="#C9D5E8" font-family="Arial,sans-serif" font-size="12">Simple, secure retail management.</text>
+  <rect x="1014" y="751" width="92" height="4" rx="2" fill="#2BCB72"/>
+</svg>

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="800" viewBox="0 0 1440 800" fill="none">
+  <rect width="1440" height="800" fill="#F5F7FB"/>
+  <rect width="278" height="800" fill="#10172D"/>
+  <rect x="20" y="25" width="44" height="44" rx="12" fill="#4F46E5"/>
+  <path d="M33 46 42 36l9 10-9 10-9-10Z" stroke="#fff" stroke-width="2.5"/><circle cx="42" cy="46" r="2.5" fill="#fff"/>
+  <text x="78" y="57" fill="#fff" font-family="Arial,sans-serif" font-size="26" font-weight="700">SaaS</text>
+  <path d="M20 88h238" stroke="#27314A"/>
+  <rect x="20" y="112" width="238" height="47" rx="10" fill="#321D34" stroke="#642639"/>
+  <text x="38" y="142" fill="#F87171" font-family="Arial,sans-serif" font-size="15" font-weight="700">♛  PLATFORM ADMIN</text>
+  <text x="31" y="196" fill="#8995AA" font-family="Arial,sans-serif" font-size="13" font-weight="700">PLATFORM MANAGEMENT</text>
+  <rect x="20" y="213" width="238" height="55" rx="10" fill="#4F46E5"/>
+  <text x="41" y="247" fill="#fff" font-family="Arial,sans-serif" font-size="16" font-weight="700">▣  Platform Overview</text>
+  <text x="42" y="305" fill="#AAB5C8" font-family="Arial,sans-serif" font-size="16">▦  All Companies</text>
+  <text x="42" y="364" fill="#AAB5C8" font-family="Arial,sans-serif" font-size="16">♟  All Users</text>
+  <text x="42" y="423" fill="#AAB5C8" font-family="Arial,sans-serif" font-size="16">▧  Platform Growth</text>
+  <text x="42" y="482" fill="#AAB5C8" font-family="Arial,sans-serif" font-size="16">▤  Platform Activity</text>
+  <path d="M20 700h238" stroke="#27314A"/>
+  <circle cx="44" cy="739" r="22" fill="#5B3BE0"/>
+  <text x="78" y="735" fill="#fff" font-family="Arial,sans-serif" font-size="15" font-weight="700">Super Admin</text>
+  <text x="78" y="755" fill="#9AA6BB" font-family="Arial,sans-serif" font-size="12">Platform Owner</text>
+  <rect x="201" y="718" width="57" height="39" rx="7" fill="#D91F26"/>
+  <text x="211" y="743" fill="#fff" font-family="Arial,sans-serif" font-size="12" font-weight="700">Logout</text>
+  <rect x="278" width="1162" height="96" fill="#fff"/>
+  <path d="M278 96h1162" stroke="#E3E8F0"/>
+  <text x="323" y="47" fill="#DC2626" font-family="Arial,sans-serif" font-size="31" font-weight="800">Platform Owner Dashboard</text>
+  <text x="323" y="73" fill="#69778D" font-family="Arial,sans-serif" font-size="16">Welcome back, Super Admin — Full platform management &amp; analytics</text>
+  <rect x="1174" y="31" width="127" height="46" rx="10" fill="#F4F7FB" stroke="#D9E1EC"/>
+  <text x="1200" y="60" fill="#24334B" font-family="Arial,sans-serif" font-size="15" font-weight="700">↻  Refresh</text>
+  <rect x="1320" y="31" width="50" height="46" rx="12" fill="#fff" stroke="#D9E1EC"/>
+  <text x="1334" y="61" fill="#ECA633" font-family="Arial,sans-serif" font-size="21">♟</text>
+  <circle cx="1364" cy="30" r="12" fill="#E33B42"/><text x="1360" y="35" fill="#fff" font-family="Arial,sans-serif" font-size="12" font-weight="700">6</text>
+  <rect x="318" y="111" width="1088" height="110" rx="16" fill="#fff" stroke="#E0E6EE"/>
+  <text x="350" y="155" fill="#42516A" font-family="Arial,sans-serif" font-size="17" font-weight="700">⚡  Quick Actions:</text>
+  <rect x="510" y="126" width="266" height="43" rx="10" fill="#4F46E5"/><text x="531" y="153" fill="#fff" font-family="Arial,sans-serif" font-size="15" font-weight="700">▦  Manage All Companies (21)</text>
+  <rect x="790" y="126" width="246" height="43" rx="10" fill="#0EA5D9"/><text x="811" y="153" fill="#fff" font-family="Arial,sans-serif" font-size="15" font-weight="700">♟  Manage All Users (29)</text>
+  <rect x="1050" y="126" width="260" height="43" rx="10" fill="#fff" stroke="#D7DFEA"/><text x="1074" y="153" fill="#536179" font-family="Arial,sans-serif" font-size="15">▧  View Platform Analytics</text>
+  <rect x="350" y="177" width="240" height="34" rx="8" fill="#fff" stroke="#D7DFEA"/><text x="371" y="200" fill="#536179" font-family="Arial,sans-serif" font-size="15">▤  View Full Activity Logs</text>
+  <g font-family="Arial,sans-serif">
+    <rect x="318" y="247" width="250" height="132" rx="16" fill="#fff" stroke="#E0E6EE"/><text x="346" y="283" fill="#637187" font-size="14" font-weight="700">TOTAL COMPANIES</text><text x="346" y="346" fill="#5540DD" font-size="43" font-weight="800">21</text>
+    <rect x="588" y="247" width="250" height="132" rx="16" fill="#fff" stroke="#E0E6EE"/><text x="616" y="283" fill="#637187" font-size="14" font-weight="700">TOTAL USERS</text><text x="616" y="346" fill="#0EA5D9" font-size="43" font-weight="800">29</text>
+    <rect x="858" y="247" width="250" height="132" rx="16" fill="#fff" stroke="#E0E6EE"/><text x="886" y="283" fill="#637187" font-size="14" font-weight="700">TOTAL ACTIVITIES</text><text x="886" y="346" fill="#7C3AED" font-size="43" font-weight="800">50</text>
+    <rect x="1128" y="247" width="278" height="132" rx="16" fill="#fff" stroke="#E0E6EE"/><text x="1156" y="283" fill="#637187" font-size="14" font-weight="700">SYSTEM STATUS</text><text x="1156" y="346" fill="#21B46A" font-size="39" font-weight="800">Active</text>
+    <rect x="318" y="397" width="250" height="122" rx="16" fill="#fff" stroke="#E0E6EE"/><text x="346" y="434" fill="#637187" font-size="14" font-weight="700">DATABASE STATUS</text><text x="346" y="486" fill="#21B46A" font-size="38" font-weight="800">Healthy</text>
+  </g>
+  <rect x="318" y="540" width="724" height="224" rx="17" fill="#fff" stroke="#E0E6EE"/>
+  <text x="350" y="581" fill="#17233C" font-family="Arial,sans-serif" font-size="20" font-weight="700">▧  Platform Growth Trend</text>
+  <circle cx="828" cy="574" r="5" fill="#5540DD"/><text x="840" y="580" fill="#5540DD" font-family="Arial,sans-serif" font-size="14">Companies</text>
+  <circle cx="928" cy="574" r="5" fill="#0EA5D9"/><text x="940" y="580" fill="#0EA5D9" font-family="Arial,sans-serif" font-size="14">Users</text>
+  <path d="M350 718h655M350 679h655M350 640h655" stroke="#E7EBF1"/>
+  <g fill="#5540DD"><rect x="390" y="695" width="34" height="23" rx="5"/><rect x="476" y="688" width="34" height="30" rx="5"/><rect x="562" y="677" width="34" height="41" rx="5"/><rect x="648" y="667" width="34" height="51" rx="5"/><rect x="734" y="650" width="34" height="68" rx="5"/><rect x="820" y="639" width="34" height="79" rx="5"/></g>
+  <g fill="#0EA5D9"><rect x="430" y="681" width="34" height="37" rx="5"/><rect x="516" y="672" width="34" height="46" rx="5"/><rect x="602" y="657" width="34" height="61" rx="5"/><rect x="688" y="642" width="34" height="76" rx="5"/><rect x="774" y="622" width="34" height="96" rx="5"/><rect x="860" y="605" width="34" height="113" rx="5"/></g>
+  <rect x="1064" y="540" width="342" height="224" rx="17" fill="#fff" stroke="#E0E6EE"/>
+  <text x="1097" y="581" fill="#17233C" font-family="Arial,sans-serif" font-size="20" font-weight="700">♙  Subscription Plans</text>
+  <text x="1097" y="623" fill="#536179" font-family="Arial,sans-serif" font-size="15">Free</text><text x="1320" y="623" fill="#17233C" font-family="Arial,sans-serif" font-size="15" font-weight="700">20 (95%)</text>
+  <rect x="1097" y="635" width="270" height="11" rx="6" fill="#EDF1F6"/><rect x="1097" y="635" width="242" height="11" rx="6" fill="#94A3B8"/>
+  <text x="1097" y="682" fill="#536179" font-family="Arial,sans-serif" font-size="15">Basic</text><text x="1320" y="682" fill="#17233C" font-family="Arial,sans-serif" font-size="15" font-weight="700">1 (5%)</text>
+  <rect x="1097" y="694" width="270" height="11" rx="6" fill="#EDF1F6"/><rect x="1097" y="694" width="24" height="11" rx="6" fill="#0EA5D9"/>
+  <text x="1097" y="740" fill="#536179" font-family="Arial,sans-serif" font-size="13">Company-specific tenant isolation</text>
+</svg>
