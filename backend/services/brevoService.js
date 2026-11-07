@@ -5,7 +5,7 @@
 
 export const sendContactNotification = async ({ name, email, subject, message }) => {
   const apiKey = process.env.BREVO_API_KEY;
-  const adminEmail = process.env.ADMIN_EMAIL || 'ahmedghulam622@gmail.com';
+  const adminEmail = process.env.ADMIN_EMAIL || 'moltivaysolutions@gmail.com';
 
   if (!apiKey || apiKey.includes('xxxxxxxx') || apiKey.trim() === '') {
     console.warn(
@@ -30,12 +30,12 @@ export const sendContactNotification = async ({ name, email, subject, message })
   const emailPayload = {
     sender: {
       name: 'Moltivay Solutions',
-      email: process.env.SENDER_EMAIL || 'ahmedghulam622@gmail.com',
+      email: process.env.SENDER_EMAIL || 'moltivaysolutions@gmail.com',
     },
     to: [
       {
         email: adminEmail,
-        name: 'Engr. Ghulam Ahmed',
+        name: 'Moltivay Solutions Admin',
       },
     ],
     replyTo: {

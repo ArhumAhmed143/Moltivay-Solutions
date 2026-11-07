@@ -5,6 +5,8 @@ import Services from './pages/Services';
 import Portfolio from './pages/Portfolio';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import SmoothScroll from './components/SmoothScroll';
+import CustomCursor from './components/CustomCursor';
 
 // Scroll to top helper on navigation
 const ScrollToTop = () => {
@@ -94,22 +96,23 @@ const PageMetadata = () => {
   return null;
 };
 
-function App() {
+export default function App() {
   return (
-    <Router>
-      <ScrollToTop />
-      <PageMetadata />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        {/* Fallback route */}
-        <Route path="*" element={<Home />} />
-      </Routes>
-    </Router>
+    <SmoothScroll>
+      <CustomCursor />
+      <Router>
+        <ScrollToTop />
+        <PageMetadata />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          {/* Fallback route */}
+          <Route path="*" element={<Home />} />
+        </Routes>
+      </Router>
+    </SmoothScroll>
   );
 }
-
-export default App;

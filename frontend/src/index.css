@@ -6,25 +6,60 @@
   html {
     scroll-behavior: smooth;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    color: #1A1A2E;
-    background-color: #FFFFFF;
+    color: #0F172A;
+    background-color: #FAFAFC;
+  }
+
+  body {
+    background-color: #FAFAFC;
+    color: #0F172A;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
-    color: #0A1628;
-    letter-spacing: -0.02em;
+    color: #0F172A;
+    letter-spacing: -0.025em;
   }
 }
 
-/* Custom Scrollbar */
+/* ========================================================
+   LENIS SMOOTH SCROLL INTEGRATION
+   ======================================================== */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* ========================================================
+   CUSTOM SCROLLBAR (SLATE-THEMED)
+   ======================================================== */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #F4F7FC;
+  background: #F1F5F9;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -36,24 +71,288 @@
   background: #94A3B8;
 }
 
-/* Modern Cleveroad subtle grid and dot patterns */
-.bg-grid-pattern {
+/* ========================================================
+   HEAVY ENTERPRISE BENTO CARDS & SURFACES
+   ======================================================== */
+.bento-heavy-card {
+  background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.04), 0 10px 25px -5px rgba(15, 23, 42, 0.04);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+}
+
+.bento-heavy-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0, 102, 255, 0.3), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.bento-heavy-card:hover {
+  border-color: #94A3B8;
+  box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.06), 0 20px 35px -10px rgba(0, 102, 255, 0.12);
+  transform: translateY(-2px);
+}
+
+.bento-heavy-card:hover::before {
+  opacity: 1;
+}
+
+/* Dark Slate Terminal HUD Card */
+.terminal-slate-card {
+  background: linear-gradient(180deg, #0F172A 0%, #090D16 100%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.35), 0 0 0 1px rgba(15, 23, 42, 0.1);
+}
+
+/* Subtle Technical Precision Grid */
+.bg-tech-grid {
   background-size: 32px 32px;
   background-image: 
-    linear-gradient(to right, rgba(0, 102, 255, 0.04) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0, 102, 255, 0.04) 1px, transparent 1px);
+    linear-gradient(to right, rgba(203, 213, 225, 0.45) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(203, 213, 225, 0.45) 1px, transparent 1px);
 }
 
-.bg-dots-pattern {
-  background-image: radial-gradient(rgba(0, 102, 255, 0.12) 1px, transparent 1px);
-  background-size: 20px 20px;
+.bg-subtle-dots {
+  background-image: radial-gradient(rgba(148, 163, 184, 0.45) 1px, transparent 1px);
+  background-size: 24px 24px;
 }
 
-/* Glassmorphism subtle card effects */
-.glass-card {
-  background: rgba(255, 255, 255, 0.85);
+/* Glassmorphism Navigation & Panels */
+.glass-nav {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.95);
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.04);
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(226, 232, 240, 0.8);
+  border: 1px solid #E2E8F0;
 }
 
+/* ========================================================
+   TECH CHIPS & BADGES
+   ======================================================== */
+.tech-chip-gray {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  background-color: #F1F5F9;
+  border: 1px solid #E2E8F0;
+  color: #334155;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+
+.tech-chip-gray:hover {
+  background-color: #E2E8F0;
+  color: #0F172A;
+  border-color: #CBD5E1;
+}
+
+.tech-chip-dark {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  background-color: #0F172A;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #E2E8F0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* ========================================================
+   LIQUID FILL & HEAVY BUTTON HOVER STYLES
+   ======================================================== */
+.btn-liquid-fill-primary {
+  position: relative;
+  overflow: hidden;
+  background-color: #0066FF;
+  color: #FFFFFF;
+  border: 1px solid #0052CC;
+  box-shadow: 0 4px 14px -2px rgba(0, 102, 255, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 1;
+}
+
+.btn-liquid-fill-primary::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0047B3;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: -1;
+}
+
+.btn-liquid-fill-primary:hover::before {
+  transform: translateY(-100%);
+}
+
+.btn-liquid-fill-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px -4px rgba(0, 102, 255, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.btn-secondary-slate {
+  background-color: #FFFFFF;
+  color: #0F172A;
+  border: 1px solid #CBD5E1;
+  box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.05);
+  transition: all 0.2s ease;
+}
+
+.btn-secondary-slate:hover {
+  background-color: #F8FAFC;
+  border-color: #94A3B8;
+  color: #0F172A;
+  box-shadow: 0 4px 12px -2px rgba(15, 23, 42, 0.08);
+  transform: translateY(-1px);
+}
+
+/* ========================================================
+   SUBTLE GRAY & ELECTRIC AMBIENT GLOWS
+   ======================================================== */
+.mesh-orb-1 {
+  position: absolute;
+  top: -10%;
+  right: -5%;
+  width: 550px;
+  height: 550px;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(0, 102, 255, 0.09) 0%, rgba(148, 163, 184, 0.06) 50%, transparent 70%);
+  filter: blur(65px);
+  pointer-events: none;
+  animation: floatOrb 14s ease-in-out infinite alternate;
+}
+
+.mesh-orb-2 {
+  position: absolute;
+  bottom: 0%;
+  left: -10%;
+  width: 500px;
+  height: 500px;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(15, 23, 42, 0.05) 0%, rgba(0, 102, 255, 0.04) 50%, transparent 70%);
+  filter: blur(55px);
+  pointer-events: none;
+  animation: floatOrb 18s ease-in-out infinite alternate-reverse;
+}
+
+.mesh-orb-3 {
+  position: absolute;
+  top: 40%;
+  right: 15%;
+  width: 380px;
+  height: 380px;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.07) 0%, transparent 70%);
+  filter: blur(45px);
+  pointer-events: none;
+}
+
+@keyframes floatOrb {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(25px, -30px) scale(1.06); }
+  100% { transform: translate(-20px, 20px) scale(0.96); }
+}
+
+/* ========================================================
+   CUSTOM LUXURY CURSOR
+   ======================================================== */
+.custom-cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  background-color: #0066FF;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease, width 0.2s ease, height 0.2s ease, opacity 0.2s ease;
+}
+
+.custom-cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1.5px solid rgba(15, 23, 42, 0.35);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: width 0.25s ease, height 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
+}
+
+body.cursor-hover .custom-cursor-ring {
+  width: 48px;
+  height: 48px;
+  border-color: rgba(0, 102, 255, 0.85);
+  background-color: rgba(0, 102, 255, 0.05);
+}
+
+body.cursor-hover .custom-cursor-dot {
+  transform: translate(-50%, -50%) scale(1.4);
+}
+
+@media (pointer: coarse) {
+  .custom-cursor-dot, .custom-cursor-ring {
+    display: none !important;
+  }
+}
+
+/* ========================================================
+   MARQUEE KEYFRAMES
+   ======================================================== */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-reverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 32s linear infinite;
+}
+
+.animate-marquee-reverse {
+  display: flex;
+  width: max-content;
+  animation: marquee-reverse 32s linear infinite;
+}
+
+.animate-marquee:hover, .animate-marquee-reverse:hover {
+  animation-play-state: paused;
+}

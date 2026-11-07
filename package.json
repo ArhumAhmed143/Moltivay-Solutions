@@ -1,0 +1,24 @@
+{
+  "name": "moltivay-solutions",
+  "version": "2.5.0",
+  "private": true,
+  "description": "World-Class Digital Agency Website with GSAP-Level Motion, Aceternity/Awwwards Design Language, Next.js 14 App Router, Three.js & Lenis Smooth Scroll.",
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "start": "npm --prefix frontend run start",
+    "server": "npm --prefix backend start"
+  },
+  "keywords": [
+    "agency",
+    "nextjs14",
+    "gsap",
+    "lenis",
+    "threejs",
+    "framer-motion",
+    "awwwards",
+    "aceternity"
+  ],
+  "author": "Moltivay Solutions",
+  "license": "PROPRIETARY"
+}

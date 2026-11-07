@@ -12,10 +12,11 @@ const router = express.Router();
  */
 router.post('/', async (req, res) => {
   try {
-    const { name, email, subject, message } = req.body;
+    const name = req.body.name || req.body.fullName;
+    const { email, subject, message } = req.body;
 
     // Step a: Validation
-    if (typeof name !== 'string' || !name.trim()) {
+    if (!name || typeof name !== 'string' || !name.trim()) {
       return res.status(400).json({
         success: false,
         error: 'Name is required.',
